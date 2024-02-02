@@ -1,0 +1,181 @@
+html{
+    background-color: #252A38; 
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.navContainer {
+    display: flex;
+    background-color: #151820;
+    color: white;
+    justify-content: space-around;
+    height: 50px;
+    align-items:center;
+}
+
+.navContainer a{
+    color: white;
+    text-decoration: none;
+}
+
+.navContainer a:hover{
+    color: #2985ff;
+}
+
+.navContainer a:active{
+    color: #2985ff;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+
+.profileTop{
+    display: grid;
+    grid-template-columns: 10% 20% 40% 30%;
+    grid-template-rows: 60% 20% 20% ;
+    margin-left: 48px;
+    margin-right: 48px;
+    
+}
+
+.coverImageGrid{
+    grid-column: 1 /span 4;
+    grid-row: 1 /span 2;
+    width: 100%;
+    height: 100%;  
+    object-fit: fill;
+    
+}
+
+.transparentDiv{
+    background-color: #151820;
+    opacity: 56%;
+    width: 100%;
+    height: 100%;
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 4;
+} 
+
+.profileImageGrid{
+    grid-column: 2 /span 1;
+    grid-row: 2 /span 3;
+    width: 100%;
+    height: 100%;  
+    /* object-fit: fill; */
+    border-radius: 50%;
+    z-index: 1;
+    /* justify-self: center; */
+}
+.profileTop h1{
+    line-height: 32px;
+    color: white;
+    grid-column: 3 /span 1;
+    grid-row: 2 /span 1;
+    font-weight: 600;
+    z-index: 1;
+    align-self:flex-end;
+}
+.profileName{
+    line-height: 32px;
+    color: white;
+    grid-column: 3 /span 1;
+    grid-row: 3 /span 1;
+    font-weight: 400;
+    z-index: 1;
+    align-self: flex-start;
+}
+.profileEmail{
+    line-height: 32px;
+    color: white;
+    grid-column: 3 /span 1;
+    grid-row: 3 /span 1;
+    font-weight: 300;
+    z-index: 1;  
+    align-self:flex-end;
+ 
+}
+p{
+    color: white;
+}
+
+.subtitle{
+    line-height: 32px;
+    font-weight: 400;
+    margin-left: 48px;
+    color:white;
+}
+
+.postsContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    /* width: 75%; */
+    margin-left: 48px;
+    margin-right: 48px;
+    column-gap: 48px;
+    row-gap: 48px;
+
+}
+
+.postsGrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 5% 5% 10%;
+    width: 30%;
+    height:30%;
+    background-color:#151820
+}
+.postUserName{
+    color: white;
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 1;
+    font-weight: 600;
+    z-index: 1;
+    font-size: 12px;
+    align-self: center;
+    padding:24px
+
+}
+
+.postImage{
+    width:100%;
+    height:100%;
+    grid-row: 1 / span 1;
+    grid-column: 1 /span 1;
+}
+
+.postCreatedAt{
+    color: white;
+    grid-row: 3 / span 1;
+    grid-column: 1 /span 1;
+    font-weight: 300;
+    z-index: 1;
+    font-size: 12px;
+    align-self: center;
+    align-self: center;
+    padding:24px
+
+}
+.postmessage{
+    color: white;
+    grid-row: 4 / span 1;
+    grid-column: 1 /span 1;
+    font-weight: 400;
+    z-index: 1;
+    font-size: 12px;
+    align-self: center;
+    padding:24px;
+    
+}
+
+
+ol{
+    padding-inline-start: 0px;
+    }
